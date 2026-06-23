@@ -197,6 +197,7 @@ void loop() {
    for(uint8_t i = 0; i < length + 1; i++){
      drawSegment(body[(i+head) % MAX_SNAKE_LENGTH]);
    }
+   printScore()
    display.display();
    _delay_ms(FRAME_DELAY);
    display.clearDisplay();
